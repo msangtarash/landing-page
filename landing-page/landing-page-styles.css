@@ -218,9 +218,8 @@ a {
         font-weight: 300;
         line-height: 1.5;
         font-size: 20px;
-        min-width:100px;
-        max-width:200px;
-
+        min-width: 100px;
+        max-width: 200px;
     }
 }
 
