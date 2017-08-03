@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bit landing page</title>
+    <link href="node_modules/angular-material/angular-material.css" rel="stylesheet" />
+    <link href="landing-page-styles.css" rel="stylesheet" />
+    <link href="node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <style>
+    </style>
+
+</head>
+<body ng-app="ngMaterialApp">
+
+    <div id="mySidenav" class="sidenav" >
+        <div layout="column" flex="70" flex-offset="15">
+            <div>
+                <div flex="10" layout="row" layout-align="end center " flex-offset="90" hide-xs hide-sm>
+                    <span class="closebtn" onclick="closeNav()">
+                        <i class="fa fa-close"></i>
+                    </span>
+                </div>
+                <div class="side-nav-title">Bit FrameWork</div>
+            </div>
+            <md-divider style="background-color:white"></md-divider>
+            <div class="side-nav-content" flex layout="row" flex-offset="10" layout-wrap>
+                <div flex="33" layout="column" style="padding:50px">
+                    <div><i class="fa fa-book fa-4x"></i></div>
+                    <div><h2>Learn more </h2></div>
+                    <div><a>about Bit</a></div>
+                    <div><a>Api</a></div>
+                    <div><a>Documantation</a></div>
+                    <div><a>Get Started</a></div>
+                    <div><a>Toturial</a></div>
+                </div>
+
+                <div flex="33" layout="column" style="padding:50px">
+                    <div><i class="fa fa-users fa-4x"></i></div>
+                    <div><h2>Follow us</h2></div>
+                    <div><a>about Bit</a></div>
+                    <div><a>Api</a></div>
+                    <div><a>Documantation</a></div>
+                    <div><a>Get Started</a></div>
+                    <div><a>Report issues</a></div>
+                </div>
+
+                <div flex="33" layout="column" style="padding:50px">
+                    <div><i class="fa fa-commenting-o  fa-4x"></i></div>
+                    <div><h2>Get involved</h2></div>
+                    <div><a>Stack owerflow</a></div>
+                    <div><a>Gitter</a></div>
+                    <div><a>Github</a></div>
+                    <div><a>Linked in</a></div>
+                    <div><a>Toturial</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="top-section">
+
+        <div class="header">
+            <div flex layout="row">
+                <header class="main-header" layout="row" flex="70" flex-md="80" flex-sm="90" flex-xs="95" layout-align="start center">
+
+                    <div class="logo" hide-xs hide-sm>
+                        Bit
+                    </div>
+
+                    <div flex layout="row" layout-align="end center" hide-xs hide-sm>
+                        <div><a href="">Home</a></div>
+                        <div><a href="">Community</a></div>
+                        <div><a href="">Api</a></div>
+                        <div><a href="">Doc</a></div>
+                    </div>
+
+                    <div flex="10" layout="row" layout-align="end center" hide-xs hide-sm>
+                        <span style="cursor:pointer" onclick="openNav()"><i class="fa fa-bars fa-2x "></i></span>
+                    </div>
+
+
+                    <div layout="row" layout-align="end center" hide show-xs show-sm>
+                        <a><i class="fa fa-bars fa-2x "></i></a>
+                    </div>
+
+
+                </header>
+                <div>
+                    <a id="fork" target="_blank" title="Fork Bit on github" href="#" class="github-corner">
+                        <svg width="80" height="80" viewBox="0 0 250 250">
+                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="introduction">
+                <div class="top-section-content" flex="70" flex-md="80" flex-sm="80" flex-xs="80" layout="column" layout-align="center center">
+                    <h1 style="letter-spacing: -.04em;font-size: 4em;line-height: 80%;">Bit framWork</h1>
+                    <div class="title" style="margin-bottom:30px"> A Framwork for creating good apps</div>
+                    <div class="padded" md-whiteframe="{{height}}" ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3">
+                        <md-button class="md-raised top-section-button" style="color:#35a8df ;font-weight:bold">
+                            get started
+                        </md-button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content" flex="70" flex-xs="80" flex-offset="15" flex-offset-xs="10" layout="column" layout-align="first center">
+            <h2 style=" font-weight: 300;font-size: 2.5em;margin:-.05em ;">Creat logical structed codes</h2>
+            <p style="line-height: 140%;font-size: 1em;">Bit gives you the tools to creat the web application you actualy want to built without having to conform to the roles.Bit gives you the tools to creat the web application you actualy want to built without having to conform to the roles  </p>
+        </div>
+
+    </section>
+
+
+    <section class="second-section">
+        <div flex="70" flex-offset="15" layout-align="center">
+            <div class="section-title" id="section2">
+                <h3>why bit is the best</h3>
+                <!--<a href="#section2" style="color:#35a8df"><i class="fa fa-arrow-down fa-2x"></i></a>-->
+            </div>
+            <div class="all-item-abjects" flex layout="row">
+                <div flex layout="row" layout-align="first" layout-align-xs="center" layout-align-sm="center" layout-wrap>
+                    <div class="item-object fade-in-down-on-scroll-first hidden" flex="33" flex-md="50" flex-sm="80" flex-xs="100" layout="column" layout-padding>
+                        <i class="fa fa-laptop fa-5x"></i>
+                        <h3>Build apps for any device</h3>
+                        <span>Use the same code whether you’re developing for web, iOS, Android, or desktop. Hot push new features without app store approval or forcing users to download a new native app. </span>
+                    </div>
+                    <div class="item-object fade-in-down-on-scroll-second hidden" flex="33" flex-md="50" flex-sm="80" flex-xs="100" layout="column" layout-padding>
+                        <i class="fa fa-flag fa-5x"></i>
+                        <h3>Ship more with less code</h3>
+                        <span>Accomplish in 10 lines what would otherwise take 1000, thanks to an integrated JavaScript stack that extends from the database to the end user's screen. </span>
+                    </div>
+                    <div class="item-object fade-in-down-on-scroll-third hidden" flex="33" flex-md="50" flex-sm="80" flex-xs="100" layout="column" layout-padding>
+                        <i class="fa fa-wifi fa-5x"></i>
+                        <h3>Integrate technologies </h3>
+                        <span>Use popular frameworks and tools, right out-of-the-box. Focus on building features instead of wiring disparate components together yourself. </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="thrid-section">
+        <div flex="70" flex-offset="15" layout-align="center">
+            <div class="section-title" id="section3" flex="70" flex-xs="80" flex-offset="15" flex-offset-xs="10" layout="column" layout-align="first center">
+                <h3>what is new</h3>
+                <!--<a href="#section3" style="color:#35a8df"><i class="fa fa-arrow-down fa-2x"></i></a>-->
+            </div>
+            <div class="all-item-abjects" flex layout="row" layout-align="center" layout-wrap>
+
+                <div class="item-object item-object-border" flex="30" flex-md="45" flex-sm="80" flex-xs="100" layout="column" layout-padding>
+
+                    <div flex="80" layout="row" flex-offset="10">
+                        <div flex layout="row" layout-align="first end"><h3>secure</h3></div>
+                        <div flex layout="row" layout-align="center"> <i class="fa fa-hand-scissors-o  fa-3x"></i></div>
+                    </div>
+
+                    <span>Use the same code whether you’re developing for web, iOS, Android, or desktop. Hot push new features without app store approval or forcing users</span>
+                </div>
+                <div class="item-object item-object-border" flex="30" flex-md="45" flex-sm="80" flex-xs="100" layout="column" layout-padding>
+
+                    <div flex="80" layout="row" flex-offset="10">
+                        <div flex layout="row" layout-align="first end"><h3>secure</h3></div>
+                        <div flex layout="row" layout-align="center"> <i class="fa fa-hand-scissors-o  fa-3x"></i></div>
+                    </div>
+
+                    <span>Use the same code whether you’re developing for web, iOS, Android, or desktop. Hot push new features without app store approval or forcing users</span>
+                </div>
+                <div class="item-object item-object-border" flex="30" flex-md="45" flex-sm="80" flex-xs="100" layout="column" layout-padding>
+
+                    <div flex="80" layout="row" flex-offset="10">
+                        <div flex layout="row" layout-align="first end"><h3>secure</h3></div>
+                        <div flex layout="row" layout-align="center"> <i class="fa fa-hand-scissors-o  fa-3x"></i></div>
+                    </div>
+
+                    <span>Use the same code whether you’re developing for web, iOS, Android, or desktop. Hot push new features without app store approval or forcing users</span>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+    </section>
+    <div class="fourth-section">
+        <div flex="70" flex-offset="15" layout="column">
+            <h3 class="fade-in-left-on-scroll hidden">upcoming events</h3>
+            <div class="fade-in-right-on-scroll hidden" flex flex-offset="5" layout="row" layout-wrap>
+                <div class="upcoming-event" flex="25" flex-md="33" flex-sm="45" flex-xs="80" layout="row">
+                    <div class="circle-button"><a>sep <br />11</a></div>
+                    <div class="event-information" flex layout="column" layout-align="center">
+                        <span>12/9//2017</span>
+                        <strong> java zoon</strong>
+                    </div>
+                </div>
+                <div class="upcoming-event" flex="25" flex-md="33" flex-sm="45" hide-xs layout="row">
+                    <div class="circle-button"><a>sep <br />11</a></div>
+                    <div class="event-information" flex layout="column" layout-align="center">
+                        <span>12/9//2017</span>
+                        <strong> java zoon</strong>
+                    </div>
+                </div>
+                <div class="upcoming-event" flex="25" flex-md="33" hide-sm hide-xs layout="row">
+                    <div class="circle-button"><a>sep <br />11</a></div>
+                    <div class="event-information" flex layout="column" layout-align="center">
+                        <span>12/9//2017</span>
+                        <strong> java zoon</strong>
+                    </div>
+                </div>
+                <div class="upcoming-event" flex="25" hide-md hide-sm hide-xs layout="row">
+                    <div class="circle-button"><a>sep <br />11</a></div>
+                    <div class="event-information" flex layout="column" layout-align="center">
+                        <span>12/9//2017</span>
+                        <strong> java zoon</strong>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div flex layout="row" layout-align="end"><a>see more >></a></div>
+
+        </div>
+    </div>
+    <div class="fifth-section" hide>
+        <div flex="70" flex-offset="15" layout="column">
+            <h3 class="section-title" style="text-align:center">Bit integrates with</h3>
+            <div flex layout="row">
+
+                <div flex="20" layout="row" layout-align="start center"><a class="slide-button" onclick="plusDivs(-1)">&#10094;</a></div>
+
+                <div flex="60" layout="row">
+
+                    <div class="mySlides" style="width:100% ">
+                        <div flex layout="row" layout-align="center center" layout-wrap>
+                            <div flex="25"><i class="fa fa-comments-o  fa-3x"></i></div>
+                            <div flex="25"><i class="fa fa-envelope  fa-3x"></i></div>
+                            <div flex="25"><i class="fa fa-envira  fa-3x"></i></div>
+                            <div flex="25"><i class="fa fa-tripadvisor  fa-3x"></i></div>
+                        </div>
+                    </div>
+                    <div class="mySlides" style="width:100% ">
+                        <div flex layout="row" layout-align="center center" layout-wrap>
+                            <div flex="25"><i class="fa fa-comments-o  fa-3x" flex></i></div>
+                            <div flex="25"><i class="fa fa-envelope  fa-3x" flex></i></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div flex="20" layout="row" layout-align="end center"><a class="slide-button" onclick="plusDivs(1)">&#10095;</a></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="fifth-section" style="background-color:gainsboro">
+        <div flex="80" flex-offset="10" layout="column">
+            <h3 class="section-title" style="text-align:center">Bit integrates with</h3>
+            <div flex layout="row" layout-align="center" layout-wrap>
+
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height = 1" ng-mouseenter="height = 6" ng-mouseleave="height = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height1}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height1 = 1" ng-mouseenter="height1 = 6" ng-mouseleave="height1 = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height2}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height2 = 1" ng-mouseenter="height2 = 6" ng-mouseleave="height2 = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height3}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height3 = 1" ng-mouseenter="height3 = 6" ng-mouseleave="height3 = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height4}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height4 = 1" ng-mouseenter="height4 = 6" ng-mouseleave="height4 = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height5}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height5 = 1" ng-mouseenter="height5 = 6" ng-mouseleave="height5 = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height6}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height6 = 1" ng-mouseenter="height6 = 6" ng-mouseleave="height6 = 1">
+                </div>
+                <div class="padded item-squer-border fade-in-on-scroll hidden" md-whiteframe="{{height7}}" flex="20" flex-xs="45" layout="row" layout-align="center center"
+                     ng-init="height7 = 1" ng-mouseenter="height7 = 6" ng-mouseleave="height7 = 1">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sixth-section">
+        <div flex="70" flex-xs="80" flex-offset="15" flex-offset-xs="10" layout="column">
+            <h3 class="section-title" style="text-align:center">Help and support</h3>
+            <div flex layout="row" flex-offset="15" flex-offset-xs="10" layout-align="center center" layout-wrap>
+
+                <div flex="25" flex-xs="50">
+                    <a href="#" title="GitBook">
+                        <svg width="100px" height="100px" viewBox="0 80 400 100" >
+                            <path fill="#3681FC" d="M164.072025,217.262237 C169.917345,217.262237 174.67264,222.009129 174.67264,227.841541 C174.67264,233.671375 169.917345,238.418267 164.072025,238.418267 C158.229288,238.418267 153.473993,233.671375 153.473993,227.841541 C153.473993,222.009129 158.229288,217.262237 164.072025,217.262237 M330.509952,151.736561 C324.664632,151.736561 319.909337,146.989669 319.909337,141.157257 C319.909337,135.324845 324.664632,130.577953 330.509952,130.577953 C336.350106,130.577953 341.105402,135.324845 341.105402,141.157257 C341.105402,146.989669 336.350106,151.736561 330.509952,151.736561 M330.509952,108.395708 C312.413483,108.395708 297.687823,123.095345 297.687823,141.157257 C297.687823,144.676816 298.274163,148.178325 299.428762,151.581855 L191.012673,209.191747 C184.852228,200.332257 174.868948,195.077414 164.072025,195.077414 C151.562576,195.077414 140.158649,202.222247 134.641369,213.392012 L37.2391749,162.132796 C26.951102,156.730982 19.2486081,139.813894 20.0648348,124.415502 C20.4884462,116.383688 23.2703328,110.149041 27.5038632,107.740786 C30.1927619,106.219512 33.4266729,106.351012 36.8543085,108.1456 L37.5052235,108.485953 C63.309353,122.058816 147.775904,166.469718 151.330106,168.117335 C156.818972,170.651933 159.872074,171.678149 169.219936,167.253561 L343.82013,76.6088059 C346.377296,75.6444725 349.360657,73.1975412 349.360657,69.4820216 C349.360657,64.3251588 344.021604,62.2907765 344.006106,62.2907765 C334.079653,57.5387275 318.811564,50.4042078 303.925758,43.4476 C272.103248,28.5726294 236.034292,11.7148451 220.195361,3.43550196 C206.520981,-3.70933137 195.512252,2.31388431 193.549175,3.53090392 L189.736673,5.41573725 C118.448568,40.6061686 23.0456121,87.7708353 17.6161547,91.0712275 C7.8885919,96.9784137 1.86504534,108.746375 1.08498057,123.358345 C-0.131610526,146.520394 11.7062599,170.667404 28.6248834,179.526894 L131.619264,232.549757 C133.938794,248.590178 147.770738,260.60309 164.072025,260.60309 C182.0006,260.60309 196.620357,246.174188 196.888989,228.339178 L310.323839,166.972512 C316.076171,171.458982 323.20524,173.918806 330.509952,173.918806 C348.603839,173.918806 363.329499,159.221747 363.329499,141.157257 C363.329499,123.095345 348.603839,108.395708 330.509952,108.395708" id="Fill-1" />
+                        </svg>
+                    </a>
+                </div>
+                <div flex="25" flex-xs="50"><a href="#" title="GitHub"><svg height="100" width="100" viewBox="0 0 512 512"><path fill="rgb(13,38,54)" d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" /></svg></a></div>
+                <div flex="25" flex-xs="50"><a href="#" title="StackOverflow"><svg height="100" width="100" viewBox="0 0 512 512"><path fill="rgb(249,84,0)" d="M294.8 361.2l-122 0.1 0-26 122-0.1L294.8 361.2zM377.2 213.7L356.4 93.5l-25.7 4.5 20.9 120.2L377.2 213.7zM297.8 301.8l-121.4-11.2 -2.4 25.9 121.4 11.2L297.8 301.8zM305.8 267.8l-117.8-31.7 -6.8 25.2 117.8 31.7L305.8 267.8zM321.2 238l-105-62 -13.2 22.4 105 62L321.2 238zM346.9 219.7l-68.7-100.8 -21.5 14.7 68.7 100.8L346.9 219.7zM315.5 275.5v106.5H155.6V275.5h-20.8v126.9h201.5V275.5H315.5z" /></svg></a></div>
+                <div flex="25" flex-xs="50">
+                    <a href="#" title="gitter">
+                        <svg fill="rgb(46, 65, 71)" width="100px" height="100px" viewBox="0 0 177.25 177.25">
+                            <rect x="61" y="41.5" width="8.25" height="61" />
+                            <rect x="110.75" y="55.5" width="8.25" height="47" />
+                            <rect x="77.5" y="55.5" width="8.25" height="80.25" />
+                            <rect x="94.25" y="55.5" width="8.25" height="80.25" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="seven-section">
+        <div class="fade-in-left-on-scroll hidden" flex="80" layout="row" layout-align="center center" flex-offset-lg="10" layout-wrap>
+            <div flex="20" flex-xs="60" layout="column" layout-align="center center">
+                <img class="circle-image" />
+                <br />
+                <div>Mr.Moradi<br /><span style="color:#35a8df"> developer</span></div>
+            </div>
+
+            <div flex="50" flex-xs="100" class="fade-in-left">
+                <blockquote>
+                    <p>
+                        <q>
+                            SilverStripe has sped up development, made us more productive. &nbsp;We can deliver technical features faster than ever before. &nbsp;Projects of such a technical nature and complexity that would have been economically unfeasible have become feasible because we only need to focus on delivering the functionality and features.
+                        </q>
+                    </p>
+                </blockquote>
+
+            </div>
+        </div>
+    </div>
+    <div class="sixth-section">
+        <div flex="60" flex-xs="80" flex-offset-xs="10" flex-offset="20" layout="column">
+            <h3 class="section-title" style="text-align:center;padding-top:0px">Learn more about Bit</h3>
+            <div flex layout="row" flex-offset="5" layout-align="center center" layout-wrap>
+                <div class="bit-sources" flex="25" flex-xs="50" layout="column" layout-align="center center">
+                    <a>
+                        <i class="fa fa-comments-o fa-3x fade-in-on-scroll hidden"></i>
+                        <h3>forums</h3>
+                    </a>
+                </div>
+
+                <div class="bit-sources" flex="25" flex-xs="50" layout="column" layout-align="center center">
+                    <a>
+                        <i class="fa fa-bookmark-o fa-3x fade-in-on-scroll hidden"></i>
+                        <h3>Toturial</h3>
+                    </a>
+                </div>
+                <div class="bit-sources" flex="25" flex-xs="50" layout="column" layout-align="center center">
+                    <a>
+                        <i class="fa fa-file-o fa-3x fade-in-on-scroll hidden"></i>
+                        <h3>Api</h3>
+                    </a>
+                </div>
+                <div class="bit-sources" flex="25" flex-xs="50" layout="column" layout-align="center center">
+                    <a>
+                        <i class="fa fa-book fa-3x fade-in-on-scroll hidden"></i>
+                        <h3>Doc</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="background-color:gray ;padding-top:20px;padding-bottom:20px;">
+        <div class="footer" flex="60" flex-sm="80" flex-offset="20" flex-offset-sm="10" layout="row" layout-align="center center" >
+            
+            <div flex="25" layout="column" layout-align="first first" hide-xs>
+                <h3><a>learn more</a></h3>
+                <div><a>Documantation</a></div>
+                <div><a>Toturial</a></div>
+                <div><a>Api</a></div>
+            </div>
+
+            <div flex="25" layout="column" layout-align="first first" hide-xs>
+                <h3><a>Follow Us</a></h3>
+                <div><a>Github</a></div>
+                <div><a>Gitter</a></div>
+                <div><a>linked in</a></div>
+            </div>
+
+            <div flex="25" layout="column" layout-align="first first" hide-xs>
+                <h3><a>Get involved </a></h3>
+                <div><a>Stack overflow</a></div>
+                <div><a>Report issues</a></div>
+                <div><a>Github</a></div>
+            </div>
+            <div flex layout="column" layout-align="center center" hide show-xs >
+                <div>
+                    <a >Documantation</a> /
+                    <a >Toturial</a> /
+                    <a >Api</a>
+                </div>
+                <div>
+                    <a>Github</a> /
+                    <a>Gitter</a> /
+                    <a>linked in</a>
+                </div>
+                <div>
+                    <a>Stack overflow</a> /
+                    <a>Github</a>
+                </div>
+                <br />
+            </div>
+
+        </div>
+        <div class="fooetr-icons" flex="70" layout="row" layout-align="end end" flex-offset="5">
+            <a> <i class="fa fa-github"></i></a>
+            <a> <i class="fa fa-linkedin-square"></i></a>
+            <a> <i class="fa fa-stack-overflow "></i></a>
+            <a> <i class="fa  fa-twitter "></i></a>
+            <a> <i class="fa  fa-slack "></i></a>
+            <a><i class="fa fa-youtube-play"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="default.js"></script>
+    <script src="Scripts.js"></script>
+    <script src="node_modules/jquery-plugin-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
+    <script>
+        $(function () {
+            $('a[href*=#]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 100, 'linear');
+            });
+        });
+        $(document).ready(function () {
+            $('.fade-in-left-on-scroll').viewportChecker({
+                classToAdd: 'fade-in-left show'
+            });
+            $('.fade-in-down-on-scroll-first').viewportChecker({
+                classToAdd: 'fade-in-first show'
+            });
+            $('.fade-in-down-on-scroll-second').viewportChecker({
+                classToAdd: 'fade-in-second show'
+            })
+            $('.fade-in-down-on-scroll-third').viewportChecker({
+                classToAdd: 'fade-in-third show'
+            })
+            $('.fade-in-on-scroll').viewportChecker({
+                classToAdd: 'fade-in show'
+            })
+            $('.fade-in-right-on-scroll').viewportChecker({
+                classToAdd: 'fade-in-right show'
+            })
+
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+
+    </script>
+
+</body>
+</html>
+

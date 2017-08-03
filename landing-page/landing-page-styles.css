@@ -1,0 +1,492 @@
+﻿body {
+    color: #525252
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+@media all and (min-width: 600px) {
+    .top-section-content {
+        padding-top: 75px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .top-section-content {
+        padding-top: 50px;
+    }
+}
+
+.top-section {
+    min-height: calc(100vh )-30px
+}
+
+.github-corner svg {
+    fill: #16455B;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave .56s ease-in-out
+}
+
+
+@keyframes octocat-wave {
+    0%,to {
+        transform: rotate(0deg)
+    }
+
+    20%,60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,80% {
+        transform: rotate(10deg)
+    }
+}
+
+
+.top-section-content {
+    text-align: center;
+    margin: 1px auto;
+    padding-bottom: 80px
+}
+
+.top-section-button {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #35a8df;
+    margin: 0
+}
+
+/*linear-gradient(to bottom,#7D8D9A 0%, #5D7081 50%, rgb(27,53,76) 100%)*/
+.header {
+    background: #35a8df;
+    color: white;
+}
+
+.main-header {
+    padding-top: 20px;
+    margin: auto;
+    height: 45px
+}
+
+    .main-header div div a {
+        padding: 0 15px;
+        color: white;
+    }
+
+        .main-header div div a:hover, .main-header div span:hover i {
+            color: #16455B;
+            background-color: #35a8df
+        }
+
+    .main-header div .md-button {
+        color: white;
+    }
+
+.logo {
+    font-size: 2em;
+    margin: 15px;
+}
+
+.second-section {
+    padding-top: 5px;
+    min-height: calc(100vh )-100px;
+}
+
+.all-item-abjects {
+    margin: 10px auto 10px;
+    text-align: center
+}
+
+.content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.thrid-section {
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.item-object span {
+    font-size: 14px;
+}
+
+.item-object-border {
+    border: 1px solid #35a8df;
+    margin: 2px
+}
+
+.fourth-section {
+    background-color: gray;
+    color: white;
+    padding: 50px 0 50px 0;
+}
+
+    .fourth-section .md-button.md-fab {
+        background-color: inherit;
+        border: 1px solid white;
+    }
+
+        .fourth-section .md-button.md-fab:hover {
+            background-color: white
+        }
+
+.fifth-section, .sixth-section, .seven-section {
+    padding: 50px 0 50px 0;
+}
+
+.circle-button {
+    border-radius: 50%;
+    border: 2px solid #35a8df;
+    height: 28px;
+    width: 42px;
+    padding: 14px 7px;
+    display: inline;
+    float: left;
+    margin: 0 10px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    line-height: 15px;
+}
+
+
+.upcoming-event:hover .circle-button {
+    color: #35a8df;
+    border-color: white;
+}
+
+.upcoming-event:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.mySlides {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slide-button {
+    border-radius: 50%;
+    border: 2px solid #35a8df;
+    padding: 0 7px 2px 7px;
+    font-size: 1em
+}
+
+.item-squer-border {
+    border: 2px solid gray;
+    margin: 2.5px;
+    height: 100px;
+    width: 315px;
+    background-color: white;
+}
+
+    .item-squer-border:hover {
+        border-color: #35a8df;
+    }
+
+@media all and (max-width: 960px) {
+    .item-squer-border {
+        height: 80px
+    }
+}
+
+@media all and (max-width: 350px) {
+    .item-squer-border {
+        height: 60px
+    }
+}
+
+@media all and (max-width: 500px) {
+    blockquote {
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 20px;
+        min-width:100px;
+        max-width:200px;
+
+    }
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+    blockquote:before {
+        display: block;
+        padding-left: 10px;
+        content: "\201C";
+        font-size: 60px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        color: #35a8df;
+    }
+
+    blockquote:after {
+        left: 230px;
+        bottom: -10px;
+        line-height: 1px;
+        position: relative;
+        content: "\201D";
+        color: #35a8df;
+        font-size: 60px;
+    }
+
+
+.circle-image {
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.seven-section {
+    background-color: gainsboro;
+}
+
+.event-information strong, .item-object div h3, .item-object h3 {
+    color: #35a8df;
+}
+
+.section-title {
+    color: #35a8df;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top-section-content h1 {
+    animation: pulse 1s;
+}
+
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-left {
+    animation: fade-in-left .3s;
+}
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-first {
+    animation: fade-in-down 1s;
+}
+
+.fade-in-second {
+    animation: fade-in-down .7s;
+}
+
+.fade-in-third {
+    animation: fade-in-down .3s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale3d(.6, .6, .6);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in .5s;
+}
+
+@keyframes fade-in-right {
+
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-right {
+    animation: fade-in-right .5s;
+}
+
+.item-object:hover i {
+    transform: translate3d(0, -5%, 0);
+}
+
+.item-object:hover {
+    background-color: deepskyblue;
+}
+
+    .item-object:hover h3 {
+        color: white
+    }
+
+.sixth-section a:hover svg path {
+    fill: white
+}
+
+.sixth-section a:hover svg {
+    border-radius: 50%;
+}
+
+.sixth-section a[title="GitBook"]:hover svg {
+    background-color: #3681FC
+}
+
+.sixth-section a[title="GitHub"]:hover svg {
+    background-color: rgb(13,38,54);
+}
+
+.sixth-section a[title="StackOverflow"]:hover svg {
+    background-color: rgb(249,84,0);
+}
+
+.sixth-section a[title="gitter"]:hover svg {
+    fill: white;
+    background-color: red;
+}
+
+.bit-sources a i {
+    border: 2px solid #35a8df;
+    border-radius: 50%;
+    width: 75px;
+    background-color: #16455B;
+    text-align: center;
+    padding: 16px 6px;
+    display: inline;
+    float: left;
+    color: white
+}
+
+.bit-sources h3 {
+    color: #16455B;
+    margin-top: 100px;
+    text-align: center
+}
+
+.bit-sources a:hover i {
+    transform: scale(1.1, 1.1)
+}
+
+.footer div div {
+    font-size: 12px;
+    line-height: 20px;
+    color: #1B1B1B;
+}
+
+.footer h3 {
+    color: #1B1B1B;
+}
+
+.footer a:hover {
+    color: white
+}
+
+.fooetr-icons a {
+    margin: 5px 5px;
+    color: white;
+}
+
+    .fooetr-icons a:hover {
+        color: black;
+    }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: .2s;
+    padding-top: 30px;
+}
+
+
+.side-nav-title {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.side-nav-content div:hover {
+    background-color: rgb(31,68,93)
+}
+
+.side-nav-content div {
+    line-height: 2em;
+}
+
+    .side-nav-content div i {
+        margin-bottom: 50px
+    }
+
+    .side-nav-content div a:hover {
+        color: #35a8df
+    }
+
+.sidenav .closebtn {
+    position: absolute;
+}
