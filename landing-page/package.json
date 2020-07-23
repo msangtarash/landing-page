@@ -1,12 +1,13 @@
 {
   "name": "landing-page",
   "dependencies": {
-    "angular": "^1.6.5",
-    "angular-animate": "^1.6.5",
-    "angular-aria": "^1.6.5",
-    "angular-material": "^1.1.4",
-    "angular-messages": "^1.6.5",
-    "font-awesome": "^4.7.0",
-    "jquery": "3.2.1"
+    "angular": "1.8.0",
+    "angular-animate": "1.8.0",
+    "angular-aria": "1.8.0",
+    "angular-material": "1.1.24",
+    "angular-messages": "1.8.0",
+    "font-awesome": "4.7.0",
+    "jquery": "3.5.1",
+    "jquery-plugin-viewport-checker": "^1.8.3"
   }
 }
